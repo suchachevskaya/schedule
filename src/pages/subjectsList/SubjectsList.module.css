@@ -1,0 +1,13 @@
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 80%;
+}
+table td,
+table th {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  font-weight: 500;
+}
