@@ -1,0 +1,114 @@
+.tableWrapper {
+  width: 44%;
+  border: 2px solid rgb(225, 225, 225);
+  border-radius: 5px;
+  margin: 12px;
+  padding: 15px 15px 15px 0;
+}
+.headerWrapper {
+  width: 100%;
+  padding: 0 0 0 15px;
+}
+.subjectName {
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 0 0 15px;
+}
+.infoWrapper {
+  border: 2px solid rgb(225, 225, 225);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  width: 95%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.infoWrapper td,
+.infoWrapper th {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+}
+
+.headerRow {
+  background-color: rgb(231, 241, 255);
+  border-radius: 5px;
+  height: 45px;
+}
+.columnLectures {
+  width: 30%;
+}
+.columnHours {
+  width: 10%;
+
+}
+
+.deleteButton {
+  width: 10px;
+  height: auto;
+  margin: 0 2px 4px 4px;
+  cursor: pointer;
+}
+.infoRow {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-items: start;
+  border-bottom: 1px solid rgb(225, 227, 231);
+}
+.bodyWrapper {
+  border: 2px solid rgb(225, 227, 231);
+}
+.infoLabel {
+  padding: 10px 5px;
+  text-align: left;
+}
+.infoValue {
+  padding: 10px 5px;
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+}
+.columnsHead {
+  border-bottom: 2px solid rgb(18, 41, 87);
+}
+.activityRow {
+  background-color: rgb(249, 254, 255);
+}
+.activityRow:nth-child(2n) {
+  background-color: rgb(245, 253, 255);
+}
+.additionalInfo {
+  width: 100%;
+}
+input {
+  border-color: transparent;
+  background-color: transparent;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .tableWrapper {
+    margin: 12px;
+    max-width: 100%;
+  }
+  .info {
+    flex: 0 0 100%;
+  }
+  .infoLabel,
+  .infoValue {
+    width: auto;
+    padding: 10px 12px;
+  }
+  .activityLabel {
+    width: 55%;
+  }
+  .activityHours {
+    width: 15%;
+  }
+  .activityTeacherCell {
+    width: 30%;
+  }
+}
