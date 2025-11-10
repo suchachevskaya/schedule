@@ -41,7 +41,6 @@
 }
 .columnHours {
   width: 10%;
-
 }
 
 .deleteButton {
@@ -91,24 +90,64 @@ input {
 
 @media (max-width: 720px) {
   .tableWrapper {
-    margin: 12px;
-    max-width: 100%;
+    width: 100%;
+    margin: 8px 8px;
+    padding: 12px 12px 12px 8px;
+    box-sizing: border-box;
   }
-  .info {
-    flex: 0 0 100%;
+
+  .headerWrapper {
+    padding: 0 8px;
   }
+
+  .subjectName {
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+
+  .infoWrapper {
+    margin: 12px 8px;
+    padding: 8px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .infoRow {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .columnLectures,
+  .columnHours {
+    width: auto;
+  }
+
+  .headerRow {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .deleteButton {
+    width: 20px;
+    margin: 0 4px;
+  }
+
   .infoLabel,
   .infoValue {
-    width: auto;
-    padding: 10px 12px;
+    padding: 8px 6px;
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
   }
-  .activityLabel {
-    width: 55%;
+
+  .additionalInfo {
+    width: 100%;
   }
-  .activityHours {
-    width: 15%;
-  }
-  .activityTeacherCell {
-    width: 30%;
+
+  input {
+    width: 100%;
+    font-size: 14px;
   }
 }
