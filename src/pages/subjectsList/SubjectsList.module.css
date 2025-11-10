@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 80%;
+  justify-content: center;
 }
 table td,
 table th {
